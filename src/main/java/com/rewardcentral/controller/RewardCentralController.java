@@ -24,7 +24,7 @@ public class RewardCentralController {
      */
 
     @GetMapping("/getRewardPoint")
-    public int getRewardPointFromService (@RequestParam String attractionId, String userId) throws UUIDException {
+    public int getRewardPointFromService (@RequestParam String attractionId, @RequestParam String userId) throws UUIDException {
         UUID attractionUUID = null;
         UUID userUUID = null;
         try {
