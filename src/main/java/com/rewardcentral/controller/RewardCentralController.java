@@ -19,10 +19,9 @@ public class RewardCentralController {
      *
      * @param attractionId get attraction UUID as a string
      * @param userId get user UUID as a string
-     * @return int the rewardsPoints
+     * @return int the rewardsPoints to the port 9000
      * @throws UUIDException if something went wrong parsing String id to UUID
      */
-
     @GetMapping("/getRewardPoint")
     public int getRewardPointFromService (@RequestParam String attractionId, @RequestParam String userId) throws UUIDException {
         UUID attractionUUID = null;

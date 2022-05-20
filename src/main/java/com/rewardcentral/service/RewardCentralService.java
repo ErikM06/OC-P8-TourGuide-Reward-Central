@@ -15,7 +15,7 @@ public class RewardCentralService {
     /**
      * @param attractionId the attraction's UUID
      * @param userId the user's UUID
-     * @return an int representing the reward points
+     * @return a random int representing the reward points
      */
     public Integer getRewardPointsRewardsCentral(UUID attractionId, UUID userId) {
         logger.debug("getRewardPointsRewardsCentral");
